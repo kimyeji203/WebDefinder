@@ -1,0 +1,247 @@
+<html>
+    <meta charset="UTF-8">
+    
+    <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+  <link href="maincss.css" type="text/css" rel="stylesheet">
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <script>
+            function resize1(a, number) {
+                document.getElementById(`${number}h`).style.color = 'black';
+                document.getElementById(`${number}p`).style.color = 'black';
+                document.getElementById(`img${number}`).style.opacity = 0.2;
+            }
+            function resize2(a, number) {
+                document.getElementById(`${number}h`).style.color = 'rgba(0,0,0,0)';
+                document.getElementById(`${number}p`).style.color = 'rgba(0,0,0,0)';
+                document.getElementById(`img${number}`).style.opacity = 1;
+            }
+
+        </script>
+    </head>
+    <style>
+	#header{margin-bottom:50px;}
+	img{max-width:500px;}
+        .column-container {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-around;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+    
+        .card {
+            border: 0.1px solid lightgray;
+            box-shadow: 1px 1px 5px #ccc;
+            width: 500px;
+            height: 500px;
+            border-radius: 3px;
+            margin: 10px;
+            background-color: white;
+            background-size: cover;
+            cursor: pointer;
+            color: white;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+			font-family: 'Saira Semi Condensed';
+        }
+    
+		p{text-align:center}
+    
+        infoContainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 1;
+        }
+        .card.img{
+            z-index:2;
+        }
+        @media (max-width: 1000px) {
+            .container {
+                display: inline-block;
+                align-self: center;
+                margin: 0;
+				
+            }
+            .card {
+                margin-bottom: 50px;
+            }
+        }
+             .card:hover .animate-text{
+                transform:translateX(0);
+                opacity:1;
+            } 
+            .animate-text{
+                opacity:0;
+                transition: all 0.6s ease-in-out;
+            }
+    </style>
+    
+    <body>
+	<div id="wrap">
+<div id="header">
+<div id="menu">
+<p id="nav_title"><a href="main.html" >웹디파인더</a></p>
+<ul id="nav">
+<li class="nav_item"><a href="discover.html">DISCOVER</a></li>
+<li class="nav_item"><a href="index.jsp">JOBS</a></li>
+<li class="nav_item"><a href="faq.html">FAQ</a></li>
+</ul> 
+</div> <!-- menu -->
+</div> <!-- header --> 
+        <div class="column-container">
+            <div class="container">
+                <!--card-->
+                <div class="card"  id='1'>
+                    <img id="img1" src='http://www.treashya.com/img/portfolio/03_shasha/02.jpg'/>
+                    <infoContainer id="text"  onmouseover="resize1(this, 1)"  onmouseout="resize2(this, 1)" onclick="window.location.href = 'http://www.treashya.com';">
+                        <h2 class="animate-text"id='1h'>프리랜서 초윤희</h2>
+                        <p class="animate-text" id='1p'><i class="fa fa-envelope-o" aria-hidden="true"></i><br>treashya@naver.com <br><br>
+                            <i class="fa fa-phone" aria-hidden="true"></i><br>
+                            010-1234-1234
+                        </p>
+                        
+                    </infoContainer>
+                </div>
+                <!--card-->
+                <div class="card" id='2'>
+                    <img id="img2" src='http://payload505.cargocollective.com/1/22/731580/12405843/web_hangul_01_1600_c.jpg'/>
+                    <infoContainer id="text" onmouseover="resize1(this, 2)" onmouseout="resize2(this, 2)" onclick="window.location.href = 'http://rindesign.kr';">
+                      <h2 class="animate-text" id='2h'>프리랜서 박규린</h2>
+                      <p class="animate-text" id='2p'> <i class="fa fa-envelope-o" aria-hidden="true"></i><br>
+                        rindesign7@gmail.com <br><br>
+                        <i class="fa fa-phone" aria-hidden="true"></i><br>
+                        010-6395-****
+
+                    </p>
+                </infoContainer>
+                </div>
+                <!--card-->
+                <!--card-->
+                <div class="card" id='3'>
+                    <img id="img3" src='http://www.jabahn.com/wp-content/uploads/2017/06/kwonlab.jpg'/>
+                        <infoContainer id="text" onmouseover="resize1(this, 3)" onmouseout="resize2(this, 3)" onclick="window.location.href = 'http://www.jabahn.com/page/2/';" >
+                    <h2 class="animate-text" id="3h">프리랜서 반정아</h2>
+                    <p class="animate-text" id="3p"><i class="fa fa-envelope-o" aria-hidden="true"></i><br> jabahn21@naver.com
+                    </p>
+                    </infoContainer>
+                </div>
+                <!--card-->
+            </div>
+            <div class="container" id='4'>
+                <!--card-->
+                <div  class="card">
+                    <img id="img4" src='https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/18889252_809210845903532_3159852974910472192_n.jpg'/>
+                    <infoContainer id="text" onmouseover="resize1(this, 4)" onmouseout="resize2(this, 4)" onclick="window.location.href = 'http://blog.naver.com/PostThumbnailList.nhn?blogId=fromyooooon&from=postList&categoryNo=7&parentCategoryNo=7';">
+                    <h2 class="animate-text" id="4h">프리랜서 프롬윤</h2>
+                    <p class="animate-text" id="4p"> <i class="fa fa-envelope-o" aria-hidden="true"></i><br> fromyooooon@naver.com<br><br>
+                       
+                        <i class="fa fa-phone" aria-hidden="true"></i><br> 010-3161-****
+
+
+                    </p>
+                    </infoContainer>
+                </div>
+                <!--card-->
+                <!--card-->
+                <div class="card" id='5'>
+                    <img id="img5" src='https://scontent.cdninstagram.com/t51.2885-15/s640x640/e35/c0.18.1080.1080/16788987_249963655452957_5469537213895147520_n.jpg'/>
+                    <infoContainer id="text" onmouseover="resize1(this, 5)" onmouseout="resize2(this, 5)" onclick="window.location.href = 'http://hyen-freelancer.com';">
+                    <h2 class="animate-text" id="5h">프리랜서 김헤인</h2>
+                    <p class="animate-text" id="5p">
+                         <i class="fa fa-envelope-o" aria-hidden="true"></i><br>
+                        hyen.freelancer@gmail.com<br><br>
+                        <i class="fa fa-phone" aria-hidden="true"></i><br>
+                        010-4388-****
+
+                    </p>
+                    </infoContainer>
+                </div>
+                <!--card-->
+                <!--card-->
+                <div class="card" id='6'>
+                    <img id="img6" src='http://work.hoonyi.net/wp-content/uploads/sites/2/2014/08/cover_coinside.jpg'/>
+                        <infoContainer id="text" onmouseover="resize1(this,6)" onmouseout="resize2(this,6)" onclick="window.location.href = 'http://work.hoonyi.net/about/';">
+                    <h2 class="animate-text" id="6h">프리랜서 이정훈</h2>
+                    <p class="animate-text" id="6p"><i class="fa fa-envelope-o" aria-hidden="true"></i><br> info@visualoft.kr<br><br>
+                            <i class="fa fa-phone" aria-hidden="true"></i><br> 010-4005-4853
+
+                            
+                            </p>
+                    </infoContainer>
+                </div>
+                <!--card-->
+            </div>
+            <div class="container">
+                <!--card-->
+                <div class="card" id='7'>
+                    <img  id="img7" src='http://www.kimeunbin.com/images/big/pic141.jpg'/>
+                    <infoContainer id="text" onmouseover="resize1(this,7)" onmouseout="resize2(this,7)" onclick="window.location.href = 'http://www.kimeunbin.com';">
+                    <h2 class="animate-text" id="7h">프리랜서 김은비</h2>
+                    <p class="animate-text" id="7p"><i class="fa fa-envelope-o" aria-hidden="true"></i><br>project@kimeunbin.com<br><br>
+                        <i class="fa fa-phone" aria-hidden="true"></i><br>
+                        010-9891-****
+                    </p>
+                    </infoContainer>
+                </div>
+                <!--card-->
+                <!--card-->
+                <div class="card" id='8'>
+                    <img  id="img8" src='http://nahye1206.cafe24.com/wp-content/uploads/2016/11/-161010_블랙프라이데이_라혜련-e1478145537322.jpg'/>
+                        <infoContainer id="text" onmouseover="resize1(this,8)" onmouseout="resize2(this,8)" onclick="window.location.href = 'http://nahye1206.cafe24.com';" >
+                    <h2 class="animate-text" id="8h">프리랜서 라혜련</h2>
+                    <p class="animate-text" id="8p">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i><br>  babolang@naver.com
+                                <i class="fa fa-phone" aria-hidden="true"></i><br>  010-4447-****<br> <br> 
+                            
+                    </infoContainer>
+                </div>
+                <!--card-->
+                <!--card-->
+                <div class="card" id='9'>
+                    <img id="img9" src='http://www.aeyong.com/aeyong/data/file/web/thumb/990586001_bC3GmtoM_18.jpg'/>
+                        <infoContainer id="text" onmouseover="resize1(this,9)" onmouseout="resize2(this,9)" onclick="window.location.href = 'http://www.aeyong.com/aeyong/bbs/board.php?bo_table=web';">
+                    <h2 class="animate-text" id="9h">프리랜서 백애영</h2>
+                    <p class="animate-text" id="9p">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i><br>
+                        bayweb@naver.com<br><br>
+                        <i class="fa fa-phone" aria-hidden="true"></i><br>
+                        010-3618-****
+                    </p>
+                    </infoContainer>
+                </div>
+                <!--card-->
+
+
+
+				
+            </div>
+        </div>
+		
+<div id="footer">
+<h5>2017 웹디파인더 All rights reserved</h5>
+</div> <!-- footer --> 
+</div> <!-- wrap --> 
+    </body>
+    
+    </html>

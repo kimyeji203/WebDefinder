@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>웹디파인더</title>
+  <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0
+    }
+
+    .main {
+      position: relative;
+    }
+
+    .inner {
+      text-align: center;
+      display: inline-block;
+      position: absolute;
+      width: 100%;
+      top: 20%;
+      font-family: 'Taviraj', serif;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 0;
+      color: white;
+      font-weight: 100
+    }
+
+    p {
+      font-size: 23px;
+      font-weight: lighter;
+      color: #aaa
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: #5AA6ED;
+      padding: 5px 15px 5px 15px;
+      border-radius: 0.2em;
+    }
+
+    @media screen and (max-width: 736px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      p,
+      a {
+        font-size: 15px
+      }
+      .inner {
+        top: 10%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <video class="main_video" width="100%" autoplay="" loop="" preload="" poster="">
+      <source src="main_video.mp4" type="video/mp4">
+    </video>
+    <div class="inner">
+      <h1>Web Definder</h1>
+      <p>Discover awesome designer's works and get inspired by them
+        <br> Find a great Web desginer and develope your projects
+        <br>
+        <br>
+      </p>
+      <a href="main.html">GET STARTED</a>
+    </div>
+  </div>
+  <!-- video들은 div -->
+</body>
+
+</html>

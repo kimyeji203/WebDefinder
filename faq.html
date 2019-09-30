@@ -1,0 +1,299 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link
+   href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet">
+<link href="maincss.css" type="text/css" rel="stylesheet"><link href="sungmin.css" type="text/css" rel="stylesheet">
+<title>웹디파인더</title>
+<style>
+@media ( max-width :479px) {
+   .faqHeader {
+      margin-left: 1em;
+      margin-right: 1em
+   }
+   #showAll {
+      margin-right: 1em
+   }
+   .a {
+      margin: 0 1em 0 1em
+   }
+   .q {
+      margin: 0 1em 0 1em
+   }
+   .faqBody {
+      padding-left: 0
+   }
+   .subheading{
+      margin:0 1em 0 1em
+   }
+}
+
+@media ( min-width : 480px) and (max-width: 767px) {
+   .faqHeader {
+      margin-left: 3em;
+      margin-right: 3em
+   }
+   #showAll {
+      margin-right: 3em
+   }
+   .a {
+      margin: 0 3em 0 3em
+   }
+   .q {
+      margin: 0 3em 0 3em
+   }
+   .subheadin{
+      margin: 0 3em 0 3em
+   }
+   .faqBody {
+      padding-left: 0
+   }
+}
+
+@media ( min-width : 768px) and (max-width: 1023px) {
+   .faqHeader {
+      margin-left: 4em;
+      margin-right: 4em
+   }
+   #showAll {
+      margin-right: 4em
+   }
+   .a {
+      margin: 0 6em 0 6em
+   }
+   .q {
+      margin: 0 6em 0 6em
+   }
+   .subheading {
+      margin: 0 6em 0 6em
+   }
+}
+
+@media ( min-width : 1024px) {
+   .faqHeader {
+      margin-left: 5em;
+      margin-right: 5em
+   }
+   .a {
+      margin: 0 10em 0 10em
+   }
+   .q {
+      margin: 0 10em 0 10em
+   }
+   .subheading{
+      margin: 0 10em 0 10em
+   }
+   #showAll {
+      margin-right: 5em
+   }
+}
+
+h2 {
+   width: 100%;
+   text-align: center;
+   margin: 0;
+   padding-bottom: 10px;
+   float: left
+}
+
+#content {
+   margin-top: 20px;
+   margin-bottom:80px;
+}
+
+.faqHeader {
+   height: 100px;
+   margin-top: 50px
+}
+
+#showAll {
+   float: right;
+   margin-top: 8.5px;
+}
+
+#showAll:hover {
+   cursor: pointer
+}
+
+ul {
+   margin-top: 50px;
+}
+
+li {
+   list-style: none;
+}
+
+.q {
+   background-color: #EEE;
+   padding: 15px;
+   margin-bottom: 13px
+}
+
+.q:hover {
+   cursor: pointer
+}
+
+.q>a {
+   color: black;
+   text-decoration: none;
+}
+
+.a {
+   padding: 15px;
+   margin-bottom: 13px
+}
+
+.faqBody {
+   margin-top: 0
+}
+.subheading{
+   border-bottom:1px solid #eee;
+   padding: 15px 0 5px 15px;
+   margin-bottom: 13px;
+   margin-top:5px;
+}
+</style>
+</head>
+
+<body>
+<div id="wrap">
+<div id="header">
+<div id="menu">
+<p id="nav_title"><a href="main.html" >웹디파인더</a></p>
+<ul id="nav">
+<li class="nav_item"><a href="discover.html">DISCOVER</a></li>
+<li class="nav_item"><a href="index.jsp">JOBS</a></li>
+<li class="nav_item"><a href="faq.html">FAQ</a></li>
+</ul> 
+</div> <!-- menu -->
+</div> <!-- header --> 
+      <div id="content">
+         <div class="faq">
+            <div class="faqHeader">
+               <h2>FAQ</h2>
+               <span id="showAll">SHOW ALL</span>
+            </div>
+            <ul class="faqBody">
+            
+               <div class="subheading">Introduce</div>
+               <li class="article hide" id="a1">
+                  <p class="q">
+                     <a href="#a1">Q: 웹디파인더란?</a>
+                  </p>
+                  <p class="a" style="display: none;">A: Web Define + Web
+                     Designer Finder를 합친 말입니다.</p>
+               </li>
+               <li class="article hide" id="a1">
+                  <p class="q">
+                     <a href="#a1">Q: 웹디파인더 기대효과?</a>
+                  </p>
+                  <p class="a" style="display: none;">A: 
+                     개발자와 웹 디자이너간의 상호작용으로
+                     개발자는 인력을 구하고 웹 디자이너는 취업의 기회를 가질 수 있게 되는 효과를 기대합니다.</p>
+               </li>
+               
+               
+               <div class="subheading">Site</div>
+			   <li class="article hide" id="a1">
+                  <p class="q">
+                     <a href="#a1">Q: ABOUT US페이지란?</a>
+                  </p>
+                  <p class="a" style="display: none;">A:
+                     web designer들과 개발자들이 자유롭게 구인/구직정보를 올리는 페이지입니다.</p>
+               </li>
+			       <li class="article hide" id="a1">
+                  <p class="q">
+                     <a href="#a1">Q: DISCOVER페이지란?</a>
+                  </p>
+                  <p class="a" style="display: none;">A:
+                     web designer들의 작품 갤러리관입니다.
+                     원하는 작품을 클릭하시면 해당 designer의 개인 페이지로 이동합니다.</p>
+               </li>
+               <li class="article hide" id="a1">
+                  <p class="q">
+                     <a href="#a1">Q: JOPS페이지란?</a>
+                  </p>
+                  <p class="a" style="display: none;">A:
+                     web designer들과 개발자들이 자유롭게 구인/구직정보를 올리는 페이지입니다.</p>
+               </li>
+           
+               <li class="article hide" id="a1">
+                  <p class="q">
+                     <a href="#a1">Q: FAQ페이지란?</a>
+                  </p>
+                  <p class="a" style="display: none;">A: 
+                     자주 묻는 질문을 모아둔 페이지입니다.</p>
+               </li>
+               
+               
+               <div class="subheading">Plan/Avatar</div>
+               <li class="article hide" id="a1">
+                  <p class="q">
+                     <a href="#a1">Q: 사용한 프로그래밍 언어?</a>
+                  </p>
+                  <p class="a" style="display: none;">A:
+                     HTML / CSS / JavaScript / JQuery / JAVA / JSP를 사용했습니다.</p>
+               </li>
+               <li class="article hide" id="a1">
+                  <p class="q">
+                     <a href="#a1">Q: DB구현 및 연동환경?</a>
+                  </p>
+                  <p class="a" style="display: none;">A: 
+                     데이터 베이스는 MySQL 콘솔기반으로 생성하였으며 web과의 연동은 JSP기반 JAVA를 활용하였습니다.</p>
+               </li>
+
+            </ul>
+         </div>
+      </div>
+      <!-- content -->
+      <div id="footer">
+         <h5>2017 웹디파인더 All rights reserved</h5>
+      </div>
+      <!-- footer -->
+   </div>
+   <!-- wrap -->
+</body>
+<script type="text/javascript"
+   src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+
+   jQuery(function($) {
+      
+      // Frequently Asked Question
+      var article = $('.faq>.faqBody>.article');
+      article.addClass('hide');
+      article.find('.a').hide();
+      article.eq(0).removeClass('hide');
+      article.eq(0).find('.a').show();
+      $('.faq>.faqBody>.article>.q').click(function() {
+         var myArticle = $(this).parents('.article:first');
+         if (myArticle.hasClass('hide')) {
+            article.addClass('hide').removeClass('show');
+            article.find('.a').slideUp(100);
+            myArticle.removeClass('hide').addClass('show');
+            myArticle.find('.a').slideDown(100);
+         } else {
+            myArticle.removeClass('show').addClass('hide');
+            myArticle.find('.a').slideUp(100);
+         }
+         return false;
+      });
+      $('.faq>.faqHeader>#showAll').click(function() {
+         document.getElementById("showAll").innerHTML = "Close ALL";
+         var hidden = $('.faq>.faqBody>.article.hide').length;
+
+         if (hidden > 0) {
+            article.removeClass('hide').addClass('show');
+            article.find('.a').slideDown(100);
+         } else {
+            article.removeClass('show').addClass('hide');
+            article.find('.a').slideUp(100);
+            document.getElementById("showAll").innerHTML = "Show ALL";
+
+         }
+      });
+   });
+</script>
+</html>
