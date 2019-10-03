@@ -15,13 +15,14 @@ _ FAQ 페이지<br>
 <br><br><br>
 # 개발 환경
 <div>
+<img width="391" alt="개발환경" src="https://user-images.githubusercontent.com/38337323/66133283-5aa41700-e631-11e9-9fa1-b82e9ecec09d.PNG">
 
 </div>
 
 <br><br><br>
 # 사이트 맵
 <div>
-  
+  <img width="400" alt="사이트맵" src="https://user-images.githubusercontent.com/38337323/66133286-5aa41700-e631-11e9-8818-f0d7f2b59c85.PNG">
 </div>
 
 <br><br><br>
