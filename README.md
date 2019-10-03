@@ -1,6 +1,6 @@
 # WebDefinder
 웹 개발자를 위한 작품전시 및 구인구직 사이트<br><br>
-_ HTML, CSS, JSP, JAVA, JavaScript, JQuery 사용
+_ HTML, CSS, JSP, JAVA, JavaScript, JQuery 사용<br>
 _ Apatch Tomcat, MySQL<br><br>
 
 _ 4인 개발<br>
